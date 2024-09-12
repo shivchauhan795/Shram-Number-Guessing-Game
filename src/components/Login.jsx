@@ -10,7 +10,7 @@ import Cookies from "universal-cookie";
 const cookies = new Cookies();
 
 const Login = () => {
-    const backendURL = 'http://localhost:3000/'
+    const backendURL = 'https://shram-number-guessing-game-backend.onrender.com/'
     const navigate = useNavigate();
     // const dispatch = useDispatch();
     const [user, setUser] = useState({ email: '', password: '' });

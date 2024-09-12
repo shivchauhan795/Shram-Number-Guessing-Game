@@ -7,7 +7,7 @@ import { jwtDecode } from 'jwt-decode';
 const cookies = new Cookies();
 
 const Game = () => {
-    const backendURL = 'http://localhost:3000/'
+    const backendURL = 'https://shram-number-guessing-game-backend.onrender.com/'
     const token = cookies.get("SHRAM_TOKEN");
     const [randomValue, setRandomValue] = useState(null)
     const [buttonText, setButtonText] = useState('Start')

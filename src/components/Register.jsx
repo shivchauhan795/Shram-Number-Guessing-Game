@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 // dotenv.config()
 
 const Register = () => {
-    const backendURL = 'http://localhost:3000/'
+    const backendURL = 'https://shram-number-guessing-game-backend.onrender.com/'
     const navigate = useNavigate()
     const [user, setuser] = useState({ email: '', password: '', confirmpassword: '' })
 
