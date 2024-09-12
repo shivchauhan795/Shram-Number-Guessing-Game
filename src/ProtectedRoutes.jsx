@@ -9,5 +9,5 @@ export default function ProtectedRoutes() {
     const token = cookies.get("SHRAM_TOKEN");
 
     // If token exists, render the component, otherwise redirect to login
-    return token ? <Outlet /> : <Navigate to="/login" />;
+    return token ? <Outlet /> : <Navigate to="/" />;
 }

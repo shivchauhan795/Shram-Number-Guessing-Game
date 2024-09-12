@@ -13,6 +13,7 @@ import Footer from './components/Footer.jsx';
 import ProtectedRoutes from './ProtectedRoutes.jsx';
 import SemiPublicRoutes from './SemiPublicRoutes.jsx';
 import PreviousScore from './components/PreviousScore.jsx';
+import Home from './components/Home.jsx';
 
 const router = createBrowserRouter([
 
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
     element: <ProtectedRoutes />, // Wrap protected routes with ProtectedRoutes
     children: [
       {
-        path: "/",
+        path: "/game",
         element: <><Navbar /><App /><Footer /></>
       },
       {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <><Navbar /><Register /><Footer /></>
+      },
+      {
+        path: "/",
+        element: <><Navbar /><Home /><Footer /></>
       },
     ],
   },
